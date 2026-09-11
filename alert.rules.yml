@@ -1,0 +1,11 @@
+groups:
+  - name: sample_app_alerts
+    rules:
+      - alert: AppIsReceivingTraffic
+        expr: sum(rate(http_requests_total[1m])) > 0
+        for: 10s
+        labels:
+          severity: warning
+        annotations:
+          summary: "App traffic detected"
+          description: "The sample app is actively processing requests."
