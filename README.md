@@ -17,15 +17,20 @@ A production-grade, containerized observability stack built with Docker Compose.
 
 ## 🚀 Quick Start
 
-1. **Clone this repository:**
+1. ### Clone this repository:
 git clone https://github.com/pradeeprathod1165/enterprise-observability-stack.git
+```bash
 cd enterprise-observability-stack
-
+```
 2. **Configure Alerting:**
 Add your Discord Webhook URL in `alertmanager.yml`.
 
-3. **Bring up the stack:**
+3. ### Bring up the stack
+
+```bash
 docker compose up -d
+```
+
 
 4. **Access the Dashboards:**
 Navigate to `http://localhost:3000` in your web browser. 
